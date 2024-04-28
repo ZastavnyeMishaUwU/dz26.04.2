@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        #toDoList {
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #f5f5f5;
+        }
+
+        .task {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+            transition: all 0.3s ease-in-out;
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 5px 10px;
+        }
+
+        .completed {
+            background-color: #ddd;
+        }
+
+        .complete-task {
+            margin-right: 10px;
+            accent-color: #4caf50;
+        }
+
+        .task-text {
+            flex: 1;
+        }
+
+
+    </style>
+
+
+    <div id="toDoList">
+        <div class="task">
+            <input type="checkbox" class="complete-task">
+            <span class="task-text">Hit the gym</span>
+        </div>
+        <div class="task completed">
+            <input type="checkbox" class="complete-task" checked>
+            <span class="task-text">Pay bills</span>
+        </div>
+        <div class="task">
+            <input type="checkbox" class="complete-task">
+            <span class="task-text">Meet John</span>
+        </div>
+        <div class="task">
+            <input type="checkbox" class="complete-task">
+            <span class="task-text">Buy eggs</span>
+        </div>
+        <div class="task">
+            <input type="checkbox" class="complete-task">
+            <span class="task-text">Read a book</span>
+        </div>
+        <div class="task">
+            <input type="checkbox" class="complete-task">
+            <span class="task-text">Organize office</span>
+        </div>
+        <div class="task completed">
+            <input type="checkbox" class="complete-task" checked>
+            <span class="task-text">Eat dinner</span>
+        </div>
+        <div class="task">
+            <input type="checkbox" class="complete-task">
+            <span class="task-text">Buy apples</span>
+        </div>
+        <div class="task">
+            <input type="checkbox" class="complete-task">
+            <span class="task-text">Meet George</span>
+        </div>
+        <div class="task">
+            <input type="checkbox" class="complete-task">
+            <span class="task-text">Feed the cat</span>
+        </div>
+        <div class="task">
+            <input type="checkbox" class="complete-task">
+            <span class="task-text">Write a letter</span>
+        </div>
+        <div class="task completed">
+            <input type="checkbox" class="complete-task" checked>
+            <span class="task-text">Run 1 km</span>
+        </div>
+    </div>
+
+
+    <script>
+
+        function completeTask(taskEl) {
+            taskEl.classList.toggle('completed');
+        }
+
+
+
+    </script>
+</html>
